@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="css/css.css" />
+  <style>
+    .numero {
+      color: blueviolet;
+      font-size: 1.4em;
+      text-align: center;
+    }
+    .span {
+      display: flex;
+      justify-content: center;
+    }
+    .LINK {
+      display: flex;
+      justify-content: center;
+    }
+
+    .stock {
+      color: white;
+
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .stock:hover {
+      background-color: chartreuse;
+      color: darkgoldenrod;
+    }
+  </style>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="imgs/logo.jpg" alt="logo" />
+      </div>
+      <div>
+        <nav class="menu">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+          </ul>
+          <ul>
+            <li><a href="historia.html">Historia</a></li>
+          </ul>
+          <ul>
+            <li><a href="valoratual.html">Valor Atual</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <span class="stock" id="stock-price">---</span>
+        <script src="js/Valoremtemporeal.js"></script>
+      </div>
+    </header>
+
+    <h1>Api para mostrar o preco do bitcoin</h1>
+    <script src="js/Valoratual.js"></script>
+    <div class="numero">
+      <h2 id="title"></h2>
+      <p id="date">Data: <span class="span" id="thisdate"></span></p>
+      <p id="value">
+        Valor de compra: <span class="span" id="compra"></span>
+        <br />
+        Valor Maximo: <span class="span" id="Maxvalue"></span>
+        <br />
+        Valor Minimo: <span class="span" id="Minvalue"></span>
+        <br />
+        Variação: <span class="span" id="variacao"></span>
+        <br />
+        Valor de Venda: <span class="span" id="Venda"></span>
+      </p>
+    </div>
+
+    <h3>
+      <a class="LINK" href="https://docs.awesomeapi.com.br/api-de-moedas">
+        Link da API usada
+      </a>
+    </h3>
+
+    <footer class="footer">
+      <div>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/leonardo-william-3908151a3"
+              ><img src="imgs/icone_linkedin.png" alt="Linkedin"
+            /></a>
+          </li>
+
+        </ul>
+        <p> Direitos reversados ao dono do projeto @2022</p>
+      </div>
+     
+      
+      
+    </footer>
+  </body>
+</html>
